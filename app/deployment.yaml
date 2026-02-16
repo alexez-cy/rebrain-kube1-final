@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: librespeed
+  namespace: final
+  labels:
+    app.kubernetes.io/instance: librespeed
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: librespeed
+  template:
+    metadata:
+      labels:
+        app: librespeed
+        app.kubernetes.io/instance: librespeed
+    spec:
+      containers:
+        - name: librespeed
+          image: registry.rebrainme.com/workshops/middle/kubernetes-local/newplatform_autochecks/speedtest:5.3
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: librespeed-env
+            - secretRef:
+                name: librespeed-secret
+          volumeMounts:
+            - name: servers
+              mountPath: /servers.json
+              subPath: servers.json
+      volumes:
+        - name: servers
+          configMap:
+            name: librespeed-servers
