@@ -1,3 +1,9 @@
+## About
+
+This project was completed as the final assignment of the Rebrain Kubernetes course. The objective was to deploy a production-like application stack while following Kubernetes best practices, including workload deployment, persistent storage, service discovery, ingress configuration, and secure secret management.
+
+https://my.rebrainme.com/course/kubernetes-base
+
 # Kubernetes Application Deployment
 
 Production-style Kubernetes deployment of a LibreSpeed application with a MySQL backend.
@@ -153,20 +159,3 @@ kubectl get pvc -A
 - Linux container administration
 
 ---
-
-## Future Improvements
-
-- Helm chart
-- Kustomize overlays
-- Horizontal Pod Autoscaler
-- Prometheus monitoring
-- Grafana dashboards
-- Fluent Bit logging
-- GitHub Actions CI/CD
-- Terraform provisioning
-
----
-
-## Purpose
-
-This repository was created as part of a hands-on Kubernetes engineering lab and serves as a portfolio project demonstrating deployment and operation of containerized applications on Kubernetes.
