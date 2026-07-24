@@ -1,8 +1,8 @@
 ## About
 
-This project was completed as the final assignment of the Rebrain Kubernetes course. The objective was to deploy a production-like application stack while following Kubernetes best practices, including workload deployment, persistent storage, service discovery, ingress configuration, and secure secret management.
+This project was completed as the final assignment of the [Rebrain Kubernetes course](https://rebrainme.com/courses/kubernetes-base). The objective was to deploy a production-like application stack while following Kubernetes best practices, including workload deployment, persistent storage, service discovery, ingress configuration, and secure secret management.
 
-https://my.rebrainme.com/course/kubernetes-base
+
 
 # Kubernetes Application Deployment
 
